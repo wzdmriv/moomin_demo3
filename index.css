@@ -3,11 +3,12 @@ body {
     background: #000;
 }
 
-.contents {
+.ar {
     width: 100%;
     height: 100%;
     margin: auto;
     position: relative;
+    display: none;
 }
 .start {
     width: 100%;
@@ -51,6 +52,16 @@ input[type="button"]:focus {
     color:#222;
 }
 
+.map {
+    z-index: 80;
+    height: 100%;
+    width: 100%;
+}
+.map img{
+    z-index: 80;
+    height: 100%;
+}
+
 #video {
     left: 0;
     top: 0;
@@ -80,5 +91,6 @@ input[type="button"]:focus {
     height: 100%;
     object-fit:cover;
     display: none;
+    z-index: 0;
 }
    
