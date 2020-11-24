@@ -66,14 +66,35 @@ input[type="button"]:focus {
     z-index: 80;
 }
 #moomin_map{
-    height: 717px;
+    height: 100%;
 }
 
-#star_11{
+#star_11, #star_21{
     position: absolute;
-    height: 10%;
-    top: 10%;
-    left: 10%;
+    height: 6%;
+    top: 80%;
+    left: 24%;
+}
+
+#star_12, #star_22{
+    position: absolute;
+    height: 6%;
+    top: 73%;
+    left: 24%;
+}
+
+#star_13, #star_23{
+    position: absolute;
+    height: 6%;
+    top: 58%;
+    left: 19%;
+}
+
+#star_14, #star_24{
+    position: absolute;
+    height: 6%;
+    top: 31%;
+    left: 31%;
 }
 
 #video {
