@@ -64,7 +64,16 @@ input[type="button"]:focus {
 }
 .map img{
     z-index: 80;
-    height: 100%;
+}
+#moomin_map{
+    height: 717px;
+}
+
+#star_11{
+    position: absolute;
+    height: 10%;
+    top: 10%;
+    left: 10%;
 }
 
 #video {
