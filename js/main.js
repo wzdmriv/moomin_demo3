@@ -35,6 +35,10 @@ function closeStart(){
 
 function abountlm(){
     $("#modal-overlay_lm").fadeIn("fast");
+    centeringModalSyncer();
+    $("#modal-overlay_lm").unbind().click(function(){
+        $("#modal-overlay_lm").fadeOut("fast");
+    });
 }
 
 
