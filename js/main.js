@@ -52,10 +52,10 @@ function centeringModalSyncer() {
     var ccch = $( "#passwordconf" ).outerHeight();
 
     //センタリングを実行する
-    $( "#star_11, #star_21" ).css( {"left": (h*0.48) + "px","top": (h*0.8) + "px"} ) ;
-    $( "#star_12, #star_22" ).css( {"left": (h*0.48) + "px","top": (h*0.73) + "px"} ) ;
-    $( "#star_13, #star_23" ).css( {"left": (h*0.38) + "px","top": (h*0.58) + "px"} ) ;
-    $( "#star_14, #star_24" ).css( {"left": (h*0.62) + "px","top": (h*0.31) + "px"} ) ;
+    $( "#star_11, #star_21" ).css( {"left": (h*0.48) + "px","top": (h*0.8) + "px","display":"inline"} ) ;
+    $( "#star_12, #star_22" ).css( {"left": (h*0.48) + "px","top": (h*0.73) + "px","display":"inline"} ) ;
+    $( "#star_13, #star_23" ).css( {"left": (h*0.38) + "px","top": (h*0.58) + "px","display":"inline"} ) ;
+    $( "#star_14, #star_24" ).css( {"left": (h*0.62) + "px","top": (h*0.31) + "px","display":"inline"} ) ;
 }
 
 $( window ).resize( centeringModalSyncer ) ;
