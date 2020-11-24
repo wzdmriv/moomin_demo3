@@ -33,6 +33,10 @@ function closeStart(){
     $(".start").fadeOut(fade_speed);
 }
 
+function abountlm(){
+    $("#modal-overlay_lm").fadeIn("fast");
+}
+
 
 function centeringModalSyncer() {
 

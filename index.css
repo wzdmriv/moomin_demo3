@@ -25,13 +25,6 @@ h3{
     font-weight: normal;
 }
 
-.ar {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    position: relative;
-    display: none;
-}
 .start {
     text-align:center;
     padding:0px;
@@ -106,6 +99,40 @@ input[type="button"]:focus {
 #star_14, #star_24{
     position: absolute;
     height: 6%;
+    display: none;
+}
+
+#modal-overlay_lm{
+    text-align: center;
+    z-index:90;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.75);
+}
+
+#lm1{
+    text-align: center;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #ddd;
+    background: #eee;
+    color: #222;
+    width: 80%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.ar {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
     display: none;
 }
 
