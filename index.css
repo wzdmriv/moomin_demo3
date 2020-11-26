@@ -149,7 +149,6 @@ input[type="button"]:focus {
     height: 100%;
     margin: auto;
     position: relative;
-    z-index: -100;
 }
 
 #video {
