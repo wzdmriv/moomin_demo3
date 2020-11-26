@@ -102,6 +102,14 @@ input[type="button"]:focus {
     display: none;
 }
 
+.landmark{
+    z-index: 80;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 #modal-overlay_lm{
     text-align: center;
     z-index:90;
@@ -115,6 +123,9 @@ input[type="button"]:focus {
 }
 
 #lm1{
+    z-index:91;
+    display:none;
+    position:fixed;
     text-align: center;
     padding: 3px;
     border-radius: 2px;
@@ -126,6 +137,11 @@ input[type="button"]:focus {
     width: 80%;
     box-sizing: border-box;
     -webkit-appearance: none;
+}
+
+#lm1 img{
+    position: relative;
+    width: 100%;
 }
 
 .ar {
