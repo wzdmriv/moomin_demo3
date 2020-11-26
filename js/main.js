@@ -42,7 +42,7 @@ function abountlm(){
 }
 
 function deletelm(){
-    $("#modal-overlay_lm, #lm1").fadeOut("fast");
+    $("#modal-overlay_lm, #lm1,.landmark").fadeOut("fast");
 }
 
 function gotoAR(){
