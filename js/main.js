@@ -48,6 +48,7 @@ function deletelm(){
 function gotoAR(){
     $(".map").fadeOut("fast");
     $(".ar").fadeIn("fast");
+    camera();
 }
 
 
