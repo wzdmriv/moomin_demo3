@@ -71,10 +71,11 @@ input[type="button"]:focus {
     margin: auto;
 }
 .map img{
-    z-index: 80;
+    z-index: 81;
 }
 #moomin_map{
     height: 100%;
+    z-index: 80;
 }
 
 #star_11, #star_21{
