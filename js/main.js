@@ -37,8 +37,17 @@ function abountlm(){
     $("#modal-overlay_lm, #lm1").fadeIn("fast");
     centeringModalSyncer();
     $("#modal-overlay_lm").unbind().click(function(){
-        $("#modal-overlay_lm, #lm1").fadeOut("fast");
+        deletelm();
     });
+}
+
+function deletelm(){
+    $("#modal-overlay_lm, #lm1").fadeOut("fast");
+}
+
+function gotoAR(){
+    $(".map").fadeOut("fast");
+    $(".ar").fadeIn("fast");
 }
 
 
