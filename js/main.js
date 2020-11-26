@@ -47,6 +47,7 @@ function deletelm(){
 
 function gotoAR(){
     $(".map").fadeOut("fast");
+    $( ".ar" ).css( {"visibility": "visible"} ) ;
 }
 
 
