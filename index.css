@@ -149,6 +149,7 @@ input[type="button"]:focus {
     height: 100%;
     margin: auto;
     position: relative;
+    z-index: 0;
 }
 
 #video {
@@ -170,6 +171,7 @@ input[type="button"]:focus {
     top: 50%;
     margin-top: -500px;
     position: fixed;
+    z-index: 1;
 }
 
 .fade-img-box img {
