@@ -8,13 +8,13 @@ body,html {
 h1 {
     font-family: "M PLUS Rounded 1c","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo", Helvetica, SegoeUI, sans-serif;
     text-align: center;
-    font-size: 90px;
+    font-size: 100px;
     color:#fff;
     /* text-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); */
 }
 h2 {
     font-family: "M PLUS Rounded 1c","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo", Helvetica, SegoeUI, sans-serif;
-    font-size:40px;
+    font-size:50px;
     /* text-shadow: 0 0px 10px rgba(0, 0, 0, 0.3); */
     color:#222;
 }
@@ -47,7 +47,7 @@ input[type="button"]{
     position: relative;
     padding: 15px 20px;
     border-radius: 2px;
-    font-size: 40px;
+    font-size: 50px;
     outline: none;
     border: 2px solid #ddd;
     background: #eee;
@@ -94,7 +94,7 @@ input[type="button"]:focus {
 
 
 .landmark{
-    z-index: 80;
+    z-index: 90;
     top: 0;
     left: 0;
     height: 100%;
