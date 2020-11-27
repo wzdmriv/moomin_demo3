@@ -34,7 +34,7 @@ function closeStart(){
 
 function abountlm(lm_index){
     $(".landmark,#modal-overlay_lm,#lm" + lm_index).fadeIn("fast");
-    centeringContent();
+    centeringLM(lm_index);
     $("#modal-overlay_lm").unbind().click(function(){
         deletelm(lm_index);
     });
