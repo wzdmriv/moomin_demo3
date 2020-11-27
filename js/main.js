@@ -34,7 +34,7 @@ function closeStart(){
 
 function abountlm(lm_index){
     $(".landmark,#modal-overlay_lm,#lm" + lm_index).fadeIn("fast");
-    centeringModalSyncer();
+    centeringContent();
     $("#modal-overlay_lm").unbind().click(function(){
         deletelm(lm_index);
     });
@@ -54,25 +54,23 @@ function gotoAR(){
 }
 
 
-function centeringModalSyncer() {
+function centeringContent() {
 
-    //画面(ウィンドウ)の幅、高さを取得
     var w = $( window ).width() ;
     var h = $( window ).height() ;
 
-    // コンテンツ(#modal-content)の幅、高さを取得
-    // jQueryのバージョンによっては、引数[{margin:true}]を指定した時、不具合を起こします。
-    //var cw = $( "#modal-content" ).outerWidth( {margin:true} );
-    //var ch = $( "#modal-content" ).outerHeight( {margin:true} );
-    var lm1w = $( "#lm1" ).outerWidth();
-	var lm1h = $( "#lm1" ).outerHeight();
-
-    //センタリングを実行する
     $( "#star_11, #star_21" ).css( {"left": (h*0.48) + "px","top": (h*0.8) + "px","display":"inline"} ) ;
     $( "#star_12, #star_22" ).css( {"left": (h*0.48) + "px","top": (h*0.73) + "px","display":"inline"} ) ;
     $( "#star_13, #star_23" ).css( {"left": (h*0.38) + "px","top": (h*0.58) + "px","display":"inline"} ) ;
     $( "#star_14, #star_24" ).css( {"left": (h*0.62) + "px","top": (h*0.31) + "px","display":"inline"} ) ;
-    $( "#lm1" ).css( {"left": ((w - lm1w)/2) + "px","top": ((h - lm1h)/2) + "px"} ) ;
 }
 
-$( window ).resize( centeringModalSyncer ) ;
+function centeringLM(lm_index) {
+    var w = $( window ).width() ;
+    var h = $( window ).height() ;
+    var lmw = $( "#lm" + lm_index ).outerWidth();
+    var lmh = $( "#lm" + lm_index ).outerHeight();
+    $( "#lm" + lm_index ).css( {"left": ((w - lmw)/2) + "px","top": ((h - lmh)/2) + "px"} ) ;
+}
+
+$( window ).resize( centeringContent ) ;
