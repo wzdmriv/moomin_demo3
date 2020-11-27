@@ -10,7 +10,6 @@
             var $next = $active.next("img").length?$active.next("img"):$(".fade-img-box img:first");
             $active.fadeOut(fade_speed).removeClass("active");
             $next.fadeIn(fade_speed).addClass("active");
-            console.log("hello")
             if($next.attr("src")=="prt6.png"){
                 stopTimer();
             }
@@ -34,15 +33,19 @@ function closeStart(){
 }
 
 function abountlm(){
-    $("#modal-overlay_lm, #lm1").fadeIn("fast");
+    $(".landmark,#modal-overlay_lm,#lm1").fadeIn("fast");
     centeringModalSyncer();
     $("#modal-overlay_lm").unbind().click(function(){
         deletelm();
     });
 }
 
+function ifclicked(){
+    console.log("hello")
+}
+
 function deletelm(){
-    $("#modal-overlay_lm, #lm1").fadeOut("fast");
+    $(".landmark,#modal-overlay_lm, #lm1").fadeOut("fast");
 }
 
 function gotoAR(){

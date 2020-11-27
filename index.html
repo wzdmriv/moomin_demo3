@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 </head>
 <body>
-    <div class = "start">
+    <div class = "start"   onclick="ifclicked()">
         <br>
         <h1>Moomin</h1>
         <h1>Dive</h1>
@@ -21,14 +21,14 @@
 
     <div class = "map">
         <img src="moomin_map.jpeg" id="moomin_map">
-        <img src="star_1.png" id="star_11" onclick="abountlm()">
-        <img src="star_1.png" id="star_12" onclick="abountlm()">
-        <img src="star_1.png" id="star_13">
-        <img src="star_1.png" id="star_14">
-        <img src="star_2.png" id="star_21" onclick="abountlm()">
-        <img src="star_2.png" id="star_22">
-        <img src="star_2.png" id="star_23">
-        <img src="star_2.png" id="star_24">
+        <img src="star_1.png" id="star_11" onclick="abountlm(1)" class = "stars">
+        <img src="star_1.png" id="star_12" onclick="abountlm(1)" class = "stars">
+        <img src="star_1.png" id="star_13" onclick="abountlm(1)" class = "stars">
+        <img src="star_1.png" id="star_14" onclick="abountlm(1)" class = "stars">
+        <img src="star_2.png" id="star_21" onclick="abountlm(1)" class = "stars">
+        <img src="star_2.png" id="star_22" onclick="abountlm(1)" class = "stars">
+        <img src="star_2.png" id="star_23" onclick="abountlm(1)" class = "stars">
+        <img src="star_2.png" id="star_24" onclick="abountlm(1)" class = "stars">
     </div>
 
     <div class = "landmark">
@@ -36,8 +36,8 @@
         <div id="lm1">
             <h2>1. 湖にエドワードが！</h2><br>
             <img src="lm1.png" id="lm1">
-            <input type="button" value="OK" onclick="deletelm();gotoAR()"/>
-            <input type="button" value="キャンセル" onclick="deletelm()"/>
+            <input type="button" value="すすむ" onclick="deletelm();gotoAR()"/>
+            <input type="button" value="とじる" onclick="deletelm()"/>
         </div>
     </div>
 

@@ -1,5 +1,6 @@
 body,html {
-    margin: 0;
+    padding:0px;
+    margin:0px;
     width: 100%;
     height: 100%;
 }
@@ -30,28 +31,30 @@ h3{
     margin:0px;
     line-height: 1.4em;
     width: 100%;
-    min-height: 100%;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     background-color: #1e90ff;
     z-index: 100;
 }
 
 .start img {
     width: 80%;
+    max-width: 400px;
     position: relative;
 }
 
 input[type="button"]{
+    text-align: center;
     position: relative;
-    padding: 6px;
+    padding: 15px 20px;
     border-radius: 2px;
-    font-size: 50px;
+    font-size: 20px;
     outline: none;
     border: 2px solid #ddd;
     background: #eee;
     color: #222;
-    max-width: 400px;
-    width: 20%;
+    max-width: 300px;
+    width: 40%;
     box-sizing: border-box;
     -webkit-appearance: none;
 }
@@ -63,44 +66,32 @@ input[type="button"]:focus {
     color:#222;
 }
 
+
+
+
 .map {
     z-index: 80;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    position: absolute;
 }
-.map img{
-    z-index: 81;
-}
+
 #moomin_map{
     height: 100%;
     z-index: 80;
 }
 
-#star_11, #star_21{
+.stars{
     position: absolute;
     height: 6%;
     display: none;
+    z-index: 81;
 }
 
-#star_12, #star_22{
-    position: absolute;
-    height: 6%;
-    display: none;
-}
 
-#star_13, #star_23{
-    position: absolute;
-    height: 6%;
-    display: none;
-}
 
-#star_14, #star_24{
-    position: absolute;
-    height: 6%;
-    display: none;
-}
 
 .landmark{
     z-index: 80;
@@ -108,12 +99,14 @@ input[type="button"]:focus {
     left: 0;
     height: 100%;
     width: 100%;
+    position: absolute;
+    display: none;
 }
 
 #modal-overlay_lm{
     text-align: center;
     z-index:90;
-    display:none;
+    display: none;
     position:fixed;
     top:0;
     left:0;
@@ -125,7 +118,7 @@ input[type="button"]:focus {
 #lm1{
     z-index:91;
     display:none;
-    position:fixed;
+    position:absolute;
     text-align: center;
     padding: 3px;
     border-radius: 2px;
@@ -144,11 +137,13 @@ input[type="button"]:focus {
     width: 100%;
 }
 
+
+
 .ar {
     width: 100%;
     height: 100%;
     margin: auto;
-    position: relative;
+    position: absolute;
     visibility: hidden;
     z-index: 0;
 }
