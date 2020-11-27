@@ -36,7 +36,7 @@ function abountlm(lm_index){
     $(".landmark,#modal-overlay_lm,#lm" + lm_index).fadeIn("fast");
     centeringModalSyncer();
     $("#modal-overlay_lm").unbind().click(function(){
-        deletelm();
+        deletelm(lm_index);
     });
 }
 
@@ -45,7 +45,7 @@ function ifclicked(){
 }
 
 function deletelm(lm_index){
-    $(".landmark,#modal-overlay_lm, #lm" + lm_index).fadeOut("fast");
+    $(".landmark,#modal-overlay_lm,#lm" + lm_index).fadeOut("fast");
 }
 
 function gotoAR(){

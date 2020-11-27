@@ -114,7 +114,7 @@ input[type="button"]:focus {
     background-color:rgba(0,0,0,0.75);
 }
 
-#lm1{
+.lm_content{
     z-index:91;
     display:none;
     position: fixed;
@@ -131,7 +131,7 @@ input[type="button"]:focus {
     -webkit-appearance: none;
 }
 
-#lm1 img{
+.lm_content img{
     position: relative;
     width: 100%;
 }
