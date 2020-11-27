@@ -28,8 +28,8 @@
 }());
 
 function closeStart(){
-    var fade_speed = 500;
-    $(".start").fadeOut(fade_speed);
+    $(".map").fadeIn("fast");
+    $(".start").fadeOut("fast");
 }
 
 function abountlm(lm_index){
