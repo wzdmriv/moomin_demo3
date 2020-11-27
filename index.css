@@ -39,7 +39,6 @@ h3{
 
 .start img {
     width: 80%;
-    max-width: 400px;
     position: relative;
 }
 
@@ -48,7 +47,7 @@ input[type="button"]{
     position: relative;
     padding: 15px 20px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 40px;
     outline: none;
     border: 2px solid #ddd;
     background: #eee;
