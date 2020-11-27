@@ -59,10 +59,18 @@ function centeringContent() {
     var w = $( window ).width() ;
     var h = $( window ).height() ;
 
-    $( "#star_11, #star_21" ).css( {"left": (h*0.48) + "px","top": (h*0.8) + "px","display":"inline"} ) ;
-    $( "#star_12, #star_22" ).css( {"left": (h*0.48) + "px","top": (h*0.73) + "px","display":"inline"} ) ;
-    $( "#star_13, #star_23" ).css( {"left": (h*0.38) + "px","top": (h*0.58) + "px","display":"inline"} ) ;
-    $( "#star_14, #star_24" ).css( {"left": (h*0.62) + "px","top": (h*0.31) + "px","display":"inline"} ) ;
+    $( "#star_11, #star_21" ).css( {"left": (h*0.48) + "px","top": (h*0.8) + "px"} ) ;
+    $( "#star_12, #star_22" ).css( {"left": (h*0.48) + "px","top": (h*0.73) + "px"} ) ;
+    $( "#star_13, #star_23" ).css( {"left": (h*0.38) + "px","top": (h*0.58) + "px"} ) ;
+    $( "#star_14, #star_24" ).css( {"left": (h*0.62) + "px","top": (h*0.31) + "px"} ) ;
+
+    for (let star_index = 1;star_index < 5;star_index++){
+        if ($.cookie('star'+star_index) == 'done'){
+            $( "#star_1" + star_index ).css( {"display":"inline"} ) ;
+        }else{
+            $( "#star_2" + star_index ).css( {"display":"inline"} ) ;
+        }
+    }
 }
 
 function centeringLM(lm_index) {
