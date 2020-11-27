@@ -32,8 +32,8 @@ function closeStart(){
     $(".start").fadeOut(fade_speed);
 }
 
-function abountlm(){
-    $(".landmark,#modal-overlay_lm,#lm1").fadeIn("fast");
+function abountlm(lm_index){
+    $(".landmark,#modal-overlay_lm,#lm" + lm_index).fadeIn("fast");
     centeringModalSyncer();
     $("#modal-overlay_lm").unbind().click(function(){
         deletelm();
