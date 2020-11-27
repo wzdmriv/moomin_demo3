@@ -44,8 +44,8 @@ function ifclicked(){
     console.log("hello")
 }
 
-function deletelm(){
-    $(".landmark,#modal-overlay_lm, #lm1").fadeOut("fast");
+function deletelm(lm_index){
+    $(".landmark,#modal-overlay_lm, #lm" + lm_index).fadeOut("fast");
 }
 
 function gotoAR(){

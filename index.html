@@ -23,22 +23,40 @@
     <div class = "map">
         <img src="moomin_map.jpeg" id="moomin_map">
         <img src="star_1.png" id="star_11" onclick="abountlm(1)" class = "stars">
-        <img src="star_1.png" id="star_12" onclick="abountlm(1)" class = "stars">
-        <img src="star_1.png" id="star_13" onclick="abountlm(1)" class = "stars">
-        <img src="star_1.png" id="star_14" onclick="abountlm(1)" class = "stars">
+        <img src="star_1.png" id="star_12" onclick="abountlm(2)" class = "stars">
+        <img src="star_1.png" id="star_13" onclick="abountlm(3)" class = "stars">
+        <img src="star_1.png" id="star_14" onclick="abountlm(4)" class = "stars">
         <img src="star_2.png" id="star_21" onclick="abountlm(1)" class = "stars">
-        <img src="star_2.png" id="star_22" onclick="abountlm(1)" class = "stars">
-        <img src="star_2.png" id="star_23" onclick="abountlm(1)" class = "stars">
-        <img src="star_2.png" id="star_24" onclick="abountlm(1)" class = "stars">
+        <img src="star_2.png" id="star_22" onclick="abountlm(2)" class = "stars">
+        <img src="star_2.png" id="star_23" onclick="abountlm(3)" class = "stars">
+        <img src="star_2.png" id="star_24" onclick="abountlm(4)" class = "stars">
     </div>
 
     <div class = "landmark">
         <div id="modal-overlay_lm"></div>
         <div id="lm1">
-            <h2>1. 湖にエドワードが！</h2><br>
+            <h2>1. 湖にエドワードが！</h2>
             <img src="lm1.png" id="lm1">
-            <input type="button" value="すすむ" onclick="deletelm();gotoAR()"/>
-            <input type="button" value="とじる" onclick="deletelm()"/>
+            <input type="button" value="すすむ" onclick="deletelm(1);gotoAR()"/>
+            <input type="button" value="とじる" onclick="deletelm(1)"/>
+        </div>
+        <div id="lm2">
+            <h2>2. 水浴び小屋</h2>
+            <img src="lm2.png" id="lm2">
+            <input type="button" value="すすむ" onclick="deletelm(2);gotoAR()"/>
+            <input type="button" value="とじる" onclick="deletelm(2)"/>
+        </div>
+        <div id="lm3">
+            <h2>3. ニョロニョロの気圧計</h2>
+            <img src="lm3.png" id="lm3">
+            <input type="button" value="すすむ" onclick="deletelm(3);gotoAR()"/>
+            <input type="button" value="とじる" onclick="deletelm(3)"/>
+        </div>
+        <div id="lm4">
+            <h2>4. スナフキンのテント</h2>
+            <img src="lm4.jpg" id="lm4">
+            <input type="button" value="すすむ" onclick="deletelm(4);gotoAR()"/>
+            <input type="button" value="とじる" onclick="deletelm(4)"/>
         </div>
     </div>
 
