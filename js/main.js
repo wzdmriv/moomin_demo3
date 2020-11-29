@@ -24,7 +24,7 @@ function gotoAR(ar_index){
     $( ".ar" ).css( {"visibility": "visible"} ) ;
     $("#lmfade_sub" + ar_index).fadeIn("fast");
     $("#img").hide();
-    $(".fade-img-box img:first").addClass("active").show();
+    $("#fade_sub" + ar_index + " img:first").addClass("active").show();
     $('.ar').on('click', function() {
         var $active = $("#fade_sub" + ar_index + " img.active");
         var $next = $active.next("img").length?$active.next("img"):$("#fade_sub" + ar_index + " img:first");
