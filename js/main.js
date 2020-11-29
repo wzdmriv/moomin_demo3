@@ -37,12 +37,28 @@ function gotoAR(ar_index){
     );
 }
 
+
+function showdonepop(){
+    $("#modal-overlay,#done_pop").fadeIn("fast");
+    centeringDP();
+    $("#modal-overlay").unbind().click(function(){
+        deletepop();
+    });
+}
+
+function deletepop(){
+    $("#modal-overlay,#done_pop").fadeOut("fast");
+}
+
 function closeAR(){
+    $.cookie('star' + gl_lm_index, 'done', { expires: 1,path: '/' });
     $("#img").hide();
     $("#fade_sub" + gl_lm_index).fadeOut("fast");
     $( ".ar" ).css( {"visibility": "hidden"} ) ;
     $(".map").fadeIn("fast");
+    centeringContent();
 }
+
 
 
 function centeringContent() {
@@ -70,6 +86,14 @@ function centeringLM(lm_index) {
     var lmw = $( "#lm" + lm_index ).outerWidth();
     var lmh = $( "#lm" + lm_index ).outerHeight();
     $( "#lm" + lm_index ).css( {"left": ((w - lmw)/2) + "px","top": ((h - lmh)/2) + "px"} ) ;
+}
+
+function centeringDP() {
+    var w = $( window ).width() ;
+    var h = $( window ).height() ;
+    var dpw = $("#done_pop").outerWidth();
+    var dph = $("#done_pop").outerHeight();
+    $("#done_pop").css( {"left": ((w - dpw)/2) + "px","top": ((h - dph)/2) + "px"} ) ;
 }
 
 $( window ).resize( centeringContent ) ;

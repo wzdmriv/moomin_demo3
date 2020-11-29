@@ -104,7 +104,7 @@ input[type="button"]:focus {
     display: none;
 }
 
-#modal-overlay_lm{
+.modal-overlay{
     text-align: center;
     z-index:90;
     display: none;
@@ -181,5 +181,22 @@ input[type="button"]:focus {
     object-fit:cover;
     z-index: 1;
     display: none;
+}
+
+.done_pop{
+    z-index:91;
+    display:none;
+    position: fixed;
+    text-align: center;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #ddd;
+    background: #eee;
+    color: #222;
+    width: 80%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
 }
    

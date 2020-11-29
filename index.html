@@ -33,7 +33,7 @@
     </div>
 
     <div class = "landmark">
-        <div id="modal-overlay_lm"></div>
+        <div id="modal-overlay_lm" class = "modal-overlay"></div>
         <div id="lm1" class = "lm_content">
             <h2>1. 湖にエドワードが！</h2>
             <img src="lm/lm1.png" id="lm1">
@@ -61,7 +61,13 @@
     </div>
 
     <div class="ar">
-        <video id="video" autoplay playsinline onclick="closeAR()"></video>
+        <video id="video" autoplay playsinline onclick="showdonepop()"></video>
+        <div id="modal-overlay" class = "modal-overlay"></div>
+        <div id="done_pop" class = "done_pop">
+            <h2>完了しますか？</h2>
+            <input type="button" value="はい" onclick="deletepop();closeAR()"/>
+            <input type="button" value="いいえ" onclick="deletepop()"/>
+        </div>
         <div class="fade-img-box" id = "fade_sub1">
             <img src="prt1.png" id="img">
             <img src="prt2.png" id="img">
