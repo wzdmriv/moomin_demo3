@@ -36,25 +36,25 @@
         <div id="modal-overlay_lm"></div>
         <div id="lm1" class = "lm_content">
             <h2>1. 湖にエドワードが！</h2>
-            <img src="lm1.png" id="lm1">
+            <img src="lm/lm1.png" id="lm1">
             <input type="button" value="すすむ" onclick="deletelm(1);gotoAR()"/>
             <input type="button" value="とじる" onclick="deletelm(1)"/>
         </div>
         <div id="lm2" class = "lm_content">
             <h2>2. 水浴び小屋</h2>
-            <img src="lm2.png" id="lm2">
+            <img src="lm/lm2.png" id="lm2">
             <input type="button" value="すすむ" onclick="deletelm(2);gotoAR()"/>
             <input type="button" value="とじる" onclick="deletelm(2)"/>
         </div>
         <div id="lm3" class = "lm_content">
             <h2>3. ニョロニョロの気圧計</h2>
-            <img src="lm3.png" id="lm3">
+            <img src="lm/lm3.png" id="lm3">
             <input type="button" value="すすむ" onclick="deletelm(3);gotoAR()"/>
             <input type="button" value="とじる" onclick="deletelm(3)"/>
         </div>
         <div id="lm4" class = "lm_content">
             <h2>4. スナフキンのテント</h2>
-            <img src="lm4.jpg" id="lm4">
+            <img src="lm/lm4.jpg" id="lm4">
             <input type="button" value="すすむ" onclick="deletelm(4);gotoAR()"/>
             <input type="button" value="とじる" onclick="deletelm(4)"/>
         </div>
@@ -62,13 +62,18 @@
 
     <div class="ar">
         <video id="video" autoplay playsinline></video>
-        <div class="fade-img-box">
+        <div class="fade-img-box" id = "fade_sub1">
             <img src="prt1.png" id="img">
             <img src="prt2.png" id="img">
             <img src="prt3.png" id="img">
             <img src="prt4.png" id="img">
             <img src="prt5.png" id="img">
             <img src="prt6.png" id="img">
+        </div>
+        <div class="fade-img-box" id = "fade_sub2">
+            <img src="sub/sub2_1.png" id="img">
+            <img src="sub/sub2_2.png" id="img">
+            <img src="main/main2.png" id="img">
         </div>
         <script src="js/camera.js"></script>
     </div>

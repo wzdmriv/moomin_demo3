@@ -168,6 +168,7 @@ input[type="button"]:focus {
     top: 50%;
     margin-top: -500px;
     position: fixed;
+    display: none;
     z-index: 1;
 }
 
