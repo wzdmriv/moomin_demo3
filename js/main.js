@@ -40,6 +40,14 @@ function centeringContent() {
     var w = $( window ).width() ;
     var h = $( window ).height() ;
 
+    var fibw = $(".fade-img-box").outerWidth();
+    var fibh = $(".fade-img-box").outerHeight();
+
+    var vidw = $("#video").outerWidth();
+    var vidh = $("#video").outerHeight();
+
+    $(".fade-img-box").css( {"left": ((vidw - fibw)/2) + "px","top": ((vidh - fibh)/2) + "px"} ) ;
+
     $( "#star_11, #star_21" ).css( {"left": (h*0.48) + "px","top": (h*0.8) + "px"} ) ;
     $( "#star_12, #star_22" ).css( {"left": (h*0.48) + "px","top": (h*0.73) + "px"} ) ;
     $( "#star_13, #star_23" ).css( {"left": (h*0.38) + "px","top": (h*0.58) + "px"} ) ;
