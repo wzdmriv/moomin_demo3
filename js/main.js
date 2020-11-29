@@ -26,8 +26,8 @@ function gotoAR(ar_index){
     $("#img").hide();
     $("#fade_sub" + ar_index + "img:first").addClass("active").show();
     $('.ar').on('click', function() {
-        var $active = $(".fade-img-box img.active");
-        var $next = $active.next("img").length?$active.next("img"):$(".fade-img-box img:first");
+        var $active = $("#fade_sub" + ar_index + "img.active");
+        var $next = $active.next("img").length?$active.next("img"):$("#fade_sub" + ar_index + "img:first");
         $active.fadeOut("fast").removeClass("active");
         $next.fadeIn("fast").addClass("active");
         }
