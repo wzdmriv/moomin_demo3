@@ -39,8 +39,8 @@ function gotoAR(ar_index){
 
 function closeAR(){
     $("#img").hide();
-    $("#fade_sub" + gl_lm_index).fadeIn("fast");
-    $( ".ar" ).css( {"visibility": "invisible"} ) ;
+    $("#fade_sub" + gl_lm_index).fadeOut("fast");
+    $( ".ar" ).css( {"visibility": "hidden"} ) ;
     $(".map").fadeIn("fast");
 }
 
