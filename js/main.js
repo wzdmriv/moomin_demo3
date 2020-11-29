@@ -1,3 +1,5 @@
+var gl_lm_index;
+
 function closeStart(){
     $(".map").fadeIn("fast");
     $(".start").fadeOut("fast");
@@ -20,6 +22,7 @@ function deletelm(lm_index){
 }
 
 function gotoAR(ar_index){
+    gl_lm_index = ar_index;
     $(".map").fadeOut("fast");
     $( ".ar" ).css( {"visibility": "visible"} ) ;
     $("#fade_sub" + ar_index).fadeIn("fast");
@@ -32,6 +35,13 @@ function gotoAR(ar_index){
         $next.fadeIn("fast").addClass("active");
         }
     );
+}
+
+function closeAR(){
+    $("#img").hide();
+    $("#fade_sub" + gl_lm_index).fadeIn("fast");
+    $( ".ar" ).css( {"visibility": "invisible"} ) ;
+    $(".map").fadeIn("fast");
 }
 
 
