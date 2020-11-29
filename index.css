@@ -169,6 +169,7 @@ input[type="button"]:focus {
     margin-top: -500px;
     position: fixed;
     z-index: 1;
+    display: none;
 }
 
 .fade-img-box img {
@@ -179,5 +180,6 @@ input[type="button"]:focus {
     height: 100%;
     object-fit:cover;
     z-index: 1;
+    display: none;
 }
    

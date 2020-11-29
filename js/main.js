@@ -22,7 +22,7 @@ function deletelm(lm_index){
 function gotoAR(ar_index){
     $(".map").fadeOut("fast");
     $( ".ar" ).css( {"visibility": "visible"} ) ;
-    $("#lmfade_sub" + ar_index).fadeIn("fast");
+    $("#fade_sub" + ar_index).fadeIn("fast");
     $("#img").hide();
     $("#fade_sub" + ar_index + " img:first").addClass("active").show();
     $('.ar').on('click', function() {
